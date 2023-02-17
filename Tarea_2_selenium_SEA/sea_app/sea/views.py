@@ -24,7 +24,7 @@ driver.get("https://seia.sea.gob.cl/busqueda/buscarProyectoAction.php#")
 id = driver.find_element(By.ID,"info_resultado")
 max_pages = int(id.text[-5:].replace(",",""))
 
-for page_index in range(1,3): #Change 3 to max_pages+1 
+for page_index in range(1,10): #Change 10 to max_pages+1 
     print("Processing page : ",page_index)
     if page_index > 1:
         dropdown = driver.find_element(By.NAME, "pagina_offset")

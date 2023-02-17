@@ -6,7 +6,6 @@ from bike.models import *
 def index(request):
    return HttpResponse("Hello, world. You're at the bike index.")
 
-#def get_data(request):
 url = "http://api.citybik.es/v2/networks/bikesantiago"
 response = requests.get(url).json()
 
@@ -19,7 +18,6 @@ for station in response["network"]["stations"]:
    Stations.objects.create( name=station["name"], date=station["timestamp"], latitude=station["latitude"], longitude=station["longitude"], free_bikes=station["free_bikes"], empty_slots=station["empty_slots"])
 
 Network.objects.create(company=response["network"]["company"],gbfs_href=response["network"]["gbfs_href"], href=response["network"]["href"],name=response["network"]["name"])
-   #return render(request, 'home.html', {'response':response})
 
 def station(request):
    station = Stations.objects.all()
