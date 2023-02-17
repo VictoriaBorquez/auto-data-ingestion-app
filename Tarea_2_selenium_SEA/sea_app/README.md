@@ -1,5 +1,6 @@
-# Web scraping - SEA (Django + postgreSQL + Selenium)
-Proyecto que realiza un web scraping a través de **Selenium** de la página del Sistema de Evaluación de Impacto Ambiental (https://seia.sea.gob.cl/busqueda/buscarProyectoAction.php) para extraer datos de la tabla de proyectos. Los datos son convertidos en un json y se guardan en un modelo de base de datos de postgreSQL, los cuales son visualizados a través de una tabla en el navegador.
+# Web scraping - SEA - SEIA (<img src="https://user-images.githubusercontent.com/66185308/219544687-7a92774b-c2bc-48cc-b9ff-efda4e7bf22a.png" width="80"> + <img src="https://user-images.githubusercontent.com/66185308/219544998-7c87fa3b-10e0-4ec1-bbf3-fdc52473a03d.png" width="80">  +  <img src="https://user-images.githubusercontent.com/66185308/219648943-7c47db95-aecb-443f-a6ed-48da61e863e8.png" width="120"> )
+
+Proyecto creado en el framework **Django**, que realiza un web scraping a través de **Selenium** de la página del Sistema de Evaluación de Impacto Ambiental (https://seia.sea.gob.cl/busqueda/buscarProyectoAction.php) para extraer datos de la tabla de proyectos. Los datos son convertidos en un json y se guardan en un modelo de base de datos de **postgreSQL**, los cuales son visualizados a través de una tabla en el navegador.
 
 ## :gear: Requerimientos
 - Django
@@ -8,6 +9,12 @@ Proyecto que realiza un web scraping a través de **Selenium** de la página del
 
 ## :memo: Instrucciones
 
+- **Clonar repositorio**:
+
+  ```
+  git clone https://github.com/VictoriaBorquez/auto-data-ingestion-app.git
+  ```
+  
 - **Instalar Selenium y webdriver-manager** (*Ver sección documentación :open_book: *):
   ```
   pip install selenium
