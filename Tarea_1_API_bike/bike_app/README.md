@@ -8,6 +8,11 @@ Proyecto creado en el framework **Django**, que obtiene data de la API pública 
 
 ## :memo: Instrucciones
 
+- **Clonar repositorio**:
+
+  ```
+  git clone https://github.com/VictoriaBorquez/auto-data-ingestion-app.git
+  ```
 - **Instalar Request** (*Ver sección documentación :open_book: *):
   ```
   python3 -m pip install requests
@@ -36,11 +41,12 @@ Proyecto creado en el framework **Django**, que obtiene data de la API pública 
   python3 manage.py migrate
   ```
 
-- **Run project:** 
+- **Run project (dentro de directorio /auto-data-ingestion-app/Tarea_1_API_bike/bike_app):** 
   ```
   python3 manage.py runserver
   ```
   Abrir navegador: http://127.0.0.1:8000/home/
+
 
 ## :open_book: Documentación
 Django: https://www.djangoproject.com/start/overview/
