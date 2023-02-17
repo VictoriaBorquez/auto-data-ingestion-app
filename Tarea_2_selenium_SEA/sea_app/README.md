@@ -49,6 +49,7 @@ Proyecto creado en el framework **Django**, que realiza un web scraping a travé
   ```
   Abrir navegador: http://127.0.0.1:8000/home/
 
+:warning: **Dada la cantidad de datos que tiene la tabla (>2000 registros), se extraen los primeros 10 registros, para modificar esto ver línea 27 del archivo views.py**
 
 ## :open_book: Documentación
 Django: https://www.djangoproject.com/start/overview/
